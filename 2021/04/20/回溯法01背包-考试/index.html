@@ -17,14 +17,14 @@
 <meta property="og:site_name" content="Liu kui">
 <meta property="og:description" content="回溯法01背包※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※有载重量的背包，物体重量分别为5,15,25,27,30，物体价值分别为12,30,44,46,50。求最优装入背包的物体及价值。 为0，计算，大于，生成结点1,2,3,4，部分解(1,1,1,0)； 在结点4计算，大于，继续向下搜索生成结点5，得到价值为86的可行解(1,1,1,0,0)，保存在解向量中， 更新为86；">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://luikui.xyz/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014846.png">
-<meta property="og:image" content="https://luikui.xyz/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014718.png">
+<meta property="og:image" content="https://luikui.xyz/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014846.png">
+<meta property="og:image" content="https://luikui.xyz/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014718.png">
 <meta property="article:published_time" content="2021-04-19T16:14:06.000Z">
 <meta property="article:modified_time" content="2021-04-21T02:25:32.983Z">
 <meta property="article:author" content="Liu Kui">
 <meta property="article:tag" content="算法分析与设计">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://luikui.xyz/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014846.png">
+<meta name="twitter:image" content="https://luikui.xyz/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014846.png">
   
     <link rel="alternative" href="/atom.xml" title="Liu kui" type="application/atom+xml">
   
@@ -362,11 +362,11 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="回溯法01背包"><a href="#回溯法01背包" class="headerlink" title="回溯法01背包"></a>回溯法01背包</h1><h2 id="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"><a href="#※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※" class="headerlink" title="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"></a><center><font color="red">※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※</font></center></h2><h2 id="有载重量的背包，物体重量分别为5-15-25-27-30，物体价值分别为12-30-44-46-50。求最优装入背包的物体及价值。"><a href="#有载重量的背包，物体重量分别为5-15-25-27-30，物体价值分别为12-30-44-46-50。求最优装入背包的物体及价值。" class="headerlink" title="有载重量的背包，物体重量分别为5,15,25,27,30，物体价值分别为12,30,44,46,50。求最优装入背包的物体及价值。"></a>有载重量的背包，物体重量分别为5,15,25,27,30，物体价值分别为12,30,44,46,50。求最优装入背包的物体及价值。</h2><ol>
+    <h1 id="回溯法01背包"><a href="#回溯法01背包" class="headerlink" title="回溯法01背包"></a>回溯法01背包</h1><h2 id="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"><a href="#※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※" class="headerlink" title="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"></a><center><font color='red'>※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※</font></center></h2><h2 id="有载重量的背包，物体重量分别为5-15-25-27-30，物体价值分别为12-30-44-46-50。求最优装入背包的物体及价值。"><a href="#有载重量的背包，物体重量分别为5-15-25-27-30，物体价值分别为12-30-44-46-50。求最优装入背包的物体及价值。" class="headerlink" title="有载重量的背包，物体重量分别为5,15,25,27,30，物体价值分别为12,30,44,46,50。求最优装入背包的物体及价值。"></a>有载重量的背包，物体重量分别为5,15,25,27,30，物体价值分别为12,30,44,46,50。求最优装入背包的物体及价值。</h2><ol>
 <li>为0，计算，大于，生成结点1,2,3,4，部分解(1,1,1,0)；</li>
 <li>在结点4计算，大于，继续向下搜索生成结点5，得到价值为86的可行解(1,1,1,0,0)，保存在解向量中， 更新为86；</li>
 </ol>
-<p><img src="/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014846.png" alt="公式"></p>
+<p><img src="./%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014846.png" alt="公式"></p>
 <span id="more"></span>
 <ol start="3">
 <li>由叶结点5继续搜索时，被置为86，不大于的值，因此，沿右儿子分支结点回溯到左儿子分支结点3，生成右儿子分支结点6，得到部分解(1,1,0)；</li>
@@ -378,7 +378,7 @@
 <li>在结点12计算，小于，因此，回溯到左儿子分支结点1，生成右儿子分支结点13，得到部分解(0)；</li>
 <li>在结点13计算，小于，因此，向上回溯到根结点0，结束算法。最后，由向量中的内容，得到最优解(1,1,0,0,1)，从中得到最大价值92。</li>
 </ol>
-<h1 id="白话开始，请配合书、PPT和word食用更佳！！！！！"><a href="#白话开始，请配合书、PPT和word食用更佳！！！！！" class="headerlink" title="白话开始，请配合书、PPT和word食用更佳！！！！！"></a>白话开始，请配合书、PPT和word食用更佳！！！！！</h1><h2 id="※※※※注意左下角是计算p-est-不是计算p-total※※※※"><a href="#※※※※注意左下角是计算p-est-不是计算p-total※※※※" class="headerlink" title="※※※※注意左下角是计算p_est,不是计算p_total※※※※"></a><center><font color="red">※※※※注意左下角是计算p_est,不是计算p_total※※※※</font></center></h2><p><img src="/2021/04/20/%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014718.png" alt="解释"></p>
+<h1 id="白话开始，请配合书、PPT和word食用更佳！！！！！"><a href="#白话开始，请配合书、PPT和word食用更佳！！！！！" class="headerlink" title="白话开始，请配合书、PPT和word食用更佳！！！！！"></a>白话开始，请配合书、PPT和word食用更佳！！！！！</h1><h2 id="※※※※注意左下角是计算p-est-不是计算p-total※※※※"><a href="#※※※※注意左下角是计算p-est-不是计算p-total※※※※" class="headerlink" title="※※※※注意左下角是计算p_est,不是计算p_total※※※※"></a><center><font color='red'>※※※※注意左下角是计算p_est,不是计算p_total※※※※</font></center></h2><p><img src="./%E5%9B%9E%E6%BA%AF%E6%B3%9501%E8%83%8C%E5%8C%85-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420014718.png" alt="解释"></p>
 
     
 

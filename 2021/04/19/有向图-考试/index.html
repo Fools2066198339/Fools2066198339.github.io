@@ -17,15 +17,15 @@
 <meta property="og:site_name" content="Liu kui">
 <meta property="og:description" content="6.2.1  多段图的决策过程※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※多段图的最短路径问题，是求从源点到达收点的最小花费的通路。 数组元素cost[i]：存放顶点i到达收点t的最小花费数组元素path[i]：存放顶点i到达收点t的最小花费通路上的前方顶点编号数组route[n]：存放从源点s出发，到达收点t的最短通路上的顶点编号">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419231728.png">
-<meta property="og:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419232048.png">
-<meta property="og:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420000732.png">
+<meta property="og:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419231728.png">
+<meta property="og:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419232048.png">
+<meta property="og:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420000732.png">
 <meta property="article:published_time" content="2021-04-19T15:13:12.000Z">
 <meta property="article:modified_time" content="2021-04-19T17:54:06.042Z">
 <meta property="article:author" content="Liu Kui">
 <meta property="article:tag" content="算法分析与设计">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419231728.png">
+<meta name="twitter:image" content="https://luikui.xyz/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419231728.png">
   
     <link rel="alternative" href="/atom.xml" title="Liu kui" type="application/atom+xml">
   
@@ -363,10 +363,10 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="6-2-1-多段图的决策过程"><a href="#6-2-1-多段图的决策过程" class="headerlink" title="6.2.1  多段图的决策过程"></a>6.2.1  多段图的决策过程</h1><h2 id="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"><a href="#※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※" class="headerlink" title="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"></a><center><font color="red">※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※</font></center></h2><h3 id="多段图的最短路径问题，是求从源点到达收点的最小花费的通路。"><a href="#多段图的最短路径问题，是求从源点到达收点的最小花费的通路。" class="headerlink" title="多段图的最短路径问题，是求从源点到达收点的最小花费的通路。"></a>多段图的最短路径问题，是求从源点到达收点的最小花费的通路。</h3><p><img src="/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419231728.png" alt="有向图"></p>
+    <h1 id="6-2-1-多段图的决策过程"><a href="#6-2-1-多段图的决策过程" class="headerlink" title="6.2.1  多段图的决策过程"></a>6.2.1  多段图的决策过程</h1><h2 id="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"><a href="#※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※" class="headerlink" title="※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※"></a><center><font color='red'>※※※※只为考试，解释大致意思，如有错误还望海涵！※※※※</font></center></h2><h3 id="多段图的最短路径问题，是求从源点到达收点的最小花费的通路。"><a href="#多段图的最短路径问题，是求从源点到达收点的最小花费的通路。" class="headerlink" title="多段图的最短路径问题，是求从源点到达收点的最小花费的通路。"></a>多段图的最短路径问题，是求从源点到达收点的最小花费的通路。</h3><p><img src="./%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419231728.png" alt="有向图"></p>
 <h2 id="数组元素cost-i-：存放顶点i到达收点t的最小花费"><a href="#数组元素cost-i-：存放顶点i到达收点t的最小花费" class="headerlink" title="数组元素cost[i]：存放顶点i到达收点t的最小花费"></a>数组元素cost[i]：存放顶点i到达收点t的最小花费</h2><h2 id="数组元素path-i-：存放顶点i到达收点t的最小花费通路上的前方顶点编号"><a href="#数组元素path-i-：存放顶点i到达收点t的最小花费通路上的前方顶点编号" class="headerlink" title="数组元素path[i]：存放顶点i到达收点t的最小花费通路上的前方顶点编号"></a>数组元素path[i]：存放顶点i到达收点t的最小花费通路上的前方顶点编号</h2><h2 id="数组route-n-：存放从源点s出发，到达收点t的最短通路上的顶点编号"><a href="#数组route-n-：存放从源点s出发，到达收点t的最短通路上的顶点编号" class="headerlink" title="数组route[n]：存放从源点s出发，到达收点t的最短通路上的顶点编号"></a>数组route[n]：存放从源点s出发，到达收点t的最短通路上的顶点编号</h2><span id="more"></span>
-<p><img src="/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419232048.png" alt="公式"></p>
-<h1 id="白话开始，请配合书、PPT和word食用更佳！！！！！"><a href="#白话开始，请配合书、PPT和word食用更佳！！！！！" class="headerlink" title="白话开始，请配合书、PPT和word食用更佳！！！！！"></a>白话开始，请配合书、PPT和word食用更佳！！！！！</h1><p><img src="/2021/04/19/%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420000732.png" alt="解释"></p>
+<p><img src="./%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210419232048.png" alt="公式"></p>
+<h1 id="白话开始，请配合书、PPT和word食用更佳！！！！！"><a href="#白话开始，请配合书、PPT和word食用更佳！！！！！" class="headerlink" title="白话开始，请配合书、PPT和word食用更佳！！！！！"></a>白话开始，请配合书、PPT和word食用更佳！！！！！</h1><p><img src="./%E6%9C%89%E5%90%91%E5%9B%BE-%E8%80%83%E8%AF%95/QQ%E6%88%AA%E5%9B%BE20210420000732.png" alt="解释"></p>
 
     
 
